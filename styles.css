@@ -1076,6 +1076,70 @@ a.role-org {
     color: var(--color-accent-dark);
 }
 
+/* More Background Accordion */
+.more-background-section {
+    grid-column: 1 / -1;
+}
+
+.more-background-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--color-ivory);
+    border: 1px dashed var(--color-gray-300);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-gray-500);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all var(--transition-base);
+}
+
+.more-background-toggle:hover {
+    border-color: var(--color-sage-light);
+    color: var(--color-sage);
+    background: var(--color-cream);
+}
+
+.more-background-toggle svg {
+    transition: transform var(--transition-base);
+}
+
+.more-background-toggle[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+}
+
+.more-background-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s ease,
+        margin-top 0.4s ease;
+    margin-top: 0;
+}
+
+.more-background-content.expanded {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+    .more-background-content {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Submission Status Badge */
 .publication-year.submission {
     background: var(--color-sage-light);
@@ -1714,6 +1778,13 @@ a.role-org {
     margin: 0 auto;
 }
 
+.research-intro {
+    text-align: left;
+    font-style: italic;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .publication-card {
     background: var(--color-warm-white);
     padding: var(--space-2xl);
@@ -2094,6 +2165,25 @@ a.role-org {
     transform: translateY(-3px) scale(1.02);
     /* Override magnetic if needed */
     box-shadow: 0 8px 25px rgba(44, 110, 109, 0.5);
+}
+
+.contact-link-email {
+    background: var(--color-warm-white);
+    color: var(--color-sage-dark);
+    border: 1.5px solid var(--color-sage-light);
+}
+
+.contact-link-email:hover {
+    background: var(--color-sage);
+    color: white;
+    border-color: var(--color-sage);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(44, 110, 109, 0.3);
+}
+
+.contact-link-email svg {
+    width: 18px;
+    height: 18px;
 }
 
 .contact-card {
