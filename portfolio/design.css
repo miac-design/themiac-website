@@ -3,3 +3,6 @@
 /* User-selected Austin AI Hub capture: hide browser chrome and preserve the hero. */
 .mint .screen-crop img{transform:translateY(-18px);transform-origin:50% 0}
 .detail-visual.mint .screen-crop img{transform:translateY(-20px)}
+/* Selected hackathon hero: keep the partner logos and main headline together. */
+.navy .screen-crop img{transform:translateY(-42px);transform-origin:50% 0}
+.detail-visual.navy .screen-crop img{transform:translateY(-48px)}
