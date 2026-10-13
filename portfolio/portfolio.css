@@ -19,3 +19,4 @@
 @media(max-width:650px){.project-screenshot{width:calc(100% - 32px)}.project-screenshot a{height:175px}.research-summary{grid-template-columns:1fr;gap:12px}.independent-research{padding:22px}}
 .project-screenshot img{transform:translateY(-65px) scale(1.18);transform-origin:50% 0}
 @media(max-width:650px){.project-screenshot img{transform:translateY(-30px) scale(1.15)}}
+.haven-research{background:#edf0f5;border-top-color:#cbd5df}.haven-research .eyebrow{color:#52677c}
