@@ -2599,3 +2599,24 @@ a.role-org {
         display: none;
     }
 }
+/* Professional recommendations */
+#testimonials .recommendation-layout {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start;margin:36px 0 24px;}
+#testimonials .recommendation-card {min-width:0;background:#fff;border:1px solid #dce6e3;border-radius:20px;padding:28px;box-shadow:0 4px 20px rgba(32,66,61,.035);}
+#testimonials .recommendation-person {display:flex;gap:14px;align-items:center;margin-bottom:24px;}
+#testimonials .recommendation-person>div {min-width:0;}
+#testimonials .recommendation-initials {display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:50%;background:#e8f1ed;color:#2e6e65;font:600 14px/1 sans-serif;}
+#testimonials .recommendation-person h3 {font-family:inherit;font-size:16px;line-height:1.4;margin:0 0 4px;color:#203c38;}
+#testimonials .recommendation-person p {font-size:13px;line-height:1.5;margin:0;color:#627872;overflow-wrap:anywhere;}
+#testimonials .recommendation-card blockquote {margin:0 0 22px;padding:0;border:0;font-size:17px;line-height:1.75;color:#334f49;font-style:normal;}
+#testimonials .recommendation-full {border-top:1px solid #e6ece9;padding-top:16px;}
+#testimonials summary {cursor:pointer;color:#2e6e65;font-weight:600;font-size:14px;line-height:1.6;}
+#testimonials .recommendation-full p {font-size:15px;line-height:1.8;color:#536c65;margin:16px 0 0;}
+#testimonials .recommendation-collection {margin-top:32px;border-top:1px solid #d5e1dc;padding-top:24px;}
+#testimonials .recommendation-collection>summary {font-size:16px;}
+#testimonials .recommendation-collection>summary span {font-weight:400;color:#73867f;margin-left:12px;font-size:13px;}
+#testimonials .recommendation-secondary {grid-template-columns:repeat(2,minmax(0,1fr));}
+#testimonials .recommendation-source {font-size:12px;line-height:1.8;color:#73867f;margin:28px 0 0;}
+#testimonials .recommendation-source a {color:#2e6e65;white-space:nowrap;}
+#testimonials summary:focus-visible {outline:2px solid #2e6e65;outline-offset:5px;border-radius:3px;}
+@media(max-width:1000px){#testimonials .recommendation-layout{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:640px){#testimonials .recommendation-layout{grid-template-columns:minmax(0,1fr);gap:16px;}#testimonials .recommendation-card{padding:24px;}#testimonials .recommendation-card blockquote{font-size:16px;}}
