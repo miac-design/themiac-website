@@ -2620,3 +2620,5 @@ a.role-org {
 #testimonials summary:focus-visible {outline:2px solid #2e6e65;outline-offset:5px;border-radius:3px;}
 @media(max-width:1000px){#testimonials .recommendation-layout{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:640px){#testimonials .recommendation-layout{grid-template-columns:minmax(0,1fr);gap:16px;}#testimonials .recommendation-card{padding:24px;}#testimonials .recommendation-card blockquote{font-size:16px;}}
+
+#testimonials .recommendation-headshot {width:48px;height:48px;flex:0 0 48px;object-fit:cover;border-radius:50%;border:2px solid #e8f1ed;}
